@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>SASS</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="primary-nav">
+        <img
+          src="./assets/images/Logo.png"
+          alt="logo"
+          class="primary-nav__logo"
+        />
+        <div class="primary-navbar">
+          <a href="#" class="primary-navbar__item">Home</a>
+          <a href="#" class="primary-navbar__item">Services</a>
+          <a href="#" class="primary-navbar__item">Pricing</a>
+          <a href="#" class="primary-navbar__item">Testimonials</a>
+          <a href="#" class="primary-navbar__item">Blog</a>
+        </div>
+        <button class="primary-nav__register">FREE TRIAL</button>
+      </nav>
+    </header>
+    <div class="hero-section">
+      <div class="hero-section__container">
+        <div class="hero-section__left">
+          <h1 class="hero-section__heading">
+            Codext one of the best system in SAAS
+          </h1>
+          <p class="hero-section__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus et
+            repellat eveniet. Exercitationem ab voluptates, repudiandae modi vel
+            inventore.
+          </p>
+        </div>
+        <div class="hero-section__right">
+          <img
+            src="./assets/images/hero-image.svg"
+            alt="hero-image"
+            class="hero-section__image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="pros-section">
+      <div class="pros-section__container">
+        <div class="pros-section__left">
+          <img
+            src="./assets/images/sass-illustration.svg"
+            alt="sass-illustration"
+            class="pros-section__image"
+          />
+        </div>
+        <div class="pros-section__right">
+          <h2 class="pros-section__heading">
+            It's helpful for operating system
+          </h2>
+          <div class="pros-section__pro">
+            <div class="list-style orange">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M503.7 226.2l-176 151.1c-15.38 13.3-39.69 2.545-39.69-18.16V272.1C132.9 274.3 66.06 312.8 111.4 457.8c5.031 16.09-14.41 28.56-28.06 18.62C39.59 444.6 0 383.8 0 322.3c0-152.2 127.4-184.4 288-186.3V56.02c0-20.67 24.28-31.46 39.69-18.16l176 151.1C514.8 199.4 514.8 216.6 503.7 226.2z"
+                />
+              </svg>
+            </div>
+            <div class="pros-section__pro-title">Ultra Fast & Secure</div>
+            <div class="pros-section__pro-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              possimus itaque quam quisquam.
+            </div>
+          </div>
+          <div class="pros-section__pro">
+            <div class="list-style green">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M503.7 226.2l-176 151.1c-15.38 13.3-39.69 2.545-39.69-18.16V272.1C132.9 274.3 66.06 312.8 111.4 457.8c5.031 16.09-14.41 28.56-28.06 18.62C39.59 444.6 0 383.8 0 322.3c0-152.2 127.4-184.4 288-186.3V56.02c0-20.67 24.28-31.46 39.69-18.16l176 151.1C514.8 199.4 514.8 216.6 503.7 226.2z"
+                />
+              </svg>
+            </div>
+            <div class="pros-section__pro-title">Allow Customization</div>
+            <div class="pros-section__pro-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              possimus itaque quam quisquam.
+            </div>
+          </div>
+          <div class="pros-section__pro">
+            <div class="list-style blue">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M503.7 226.2l-176 151.1c-15.38 13.3-39.69 2.545-39.69-18.16V272.1C132.9 274.3 66.06 312.8 111.4 457.8c5.031 16.09-14.41 28.56-28.06 18.62C39.59 444.6 0 383.8 0 322.3c0-152.2 127.4-184.4 288-186.3V56.02c0-20.67 24.28-31.46 39.69-18.16l176 151.1C514.8 199.4 514.8 216.6 503.7 226.2z"
+                />
+              </svg>
+            </div>
+            <div class="pros-section__pro-title">Smart Contract</div>
+            <div class="pros-section__pro-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              possimus itaque quam quisquam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features-section">
+      <div class="features-section__container">
+        <div class="features-section__heading">
+          We Provide Best Features for Customers
+        </div>
+        <div class="features-section__cards">
+          <div class="features-section__card">
+            <div class="features-section__card__icon code-icon">
+              <img src="./assets/images/code.svg" alt="code" />
+            </div>
+            <div class="features-section__card__content">
+              <div class="features-section__card__title">Clean Code</div>
+              <div class="features-section__card__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+          <div class="features-section__card">
+            <div class="features-section__card__icon analytics-icon">
+              <img src="./assets/images/analytics.png" alt="analytics" />
+            </div>
+            <div class="features-section__card__content">
+              <div class="features-section__card__title">Data Analytics</div>
+              <div class="features-section__card__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+          <div class="features-section__card">
+            <div class="features-section__card__icon secured-profile-icon">
+              <img
+                src="./assets/images/secured-profile.svg"
+                alt="secured-profile"
+              />
+            </div>
+            <div class="features-section__card__content">
+              <div class="features-section__card__title">Fully Secured</div>
+              <div class="features-section__card__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+          <div class="features-section__card">
+            <div class="features-section__card__icon support-icon">
+              <img src="./assets/images/support.svg" alt="support" />
+            </div>
+            <div class="features-section__card__content">
+              <div class="features-section__card__title">24/7 Support</div>
+              <div class="features-section__card__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

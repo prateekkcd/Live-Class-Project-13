@@ -1,0 +1,389 @@
+:root {
+  --max-width: 1400px;
+  --mx-auto: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfeff;
+}
+
+.header,
+.hero-section,
+.pros-section,
+.features-section {
+  padding: 0 2em;
+}
+
+.primary-nav {
+  max-width: var(--max-width);
+  margin: var(--mx-auto);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.primary-nav__logo {
+  width: 9%;
+  margin-right: auto;
+}
+
+.primary-navbar__item {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 17px;
+}
+
+.primary-nav__register {
+  color: #ffffff;
+  background-color: #1bbcef;
+  padding: 12px 26px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 0;
+}
+
+.header,
+.hero-section {
+  background-color: #7030cc;
+}
+
+.hero-section__container,
+.pros-section__container,
+.features-section__container,
+.features-section__cards,
+.features-section__card {
+  max-width: var(--max-width);
+  margin: var(--mx-auto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section__container {
+  padding-bottom: 100px;
+  gap: 5rem;
+}
+
+.hero-section__heading {
+  font-size: 70px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.4em;
+}
+
+.hero-section__content {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.7em;
+  color: #ffffff;
+  width: 90%;
+}
+
+.hero-section__image,
+.pros-section__image {
+  width: 700px;
+}
+
+.pros-section {
+  margin-top: 100px;
+}
+
+.pros-section__heading {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.pros-section__pro {
+  margin: 40px 0;
+}
+
+.pros-section__container {
+  gap: 5rem;
+}
+
+.pros-section__pro-title {
+  display: inline;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.list-style {
+  display: inline;
+  vertical-align: middle;
+}
+
+.orange > svg {
+  width: 30px;
+  fill: #f28a3f;
+}
+
+.green > svg {
+  width: 30px;
+  fill: #7aca3a;
+}
+
+.blue > svg {
+  width: 30px;
+  fill: #3f9cf2;
+}
+
+.pros-section__pro-description {
+  width: 70%;
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.features-section__container {
+  flex-direction: column;
+}
+
+.features-section {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.features-section__heading {
+  width: 40%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.features-section__cards {
+  margin-top: 80px;
+}
+
+.features-section__card {
+  cursor: pointer;
+  width: calc((100% / 4) - 40px);
+  flex-direction: column;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+  padding: 30px 0px 0px;
+  text-align: center;
+}
+
+.features-section__card__icon {
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.features-section__card__icon > img {
+  width: 70px;
+  vertical-align: middle;
+}
+
+.code-icon {
+  background-color: #faeaeb;
+}
+
+.analytics-icon {
+  background-color: #fbf0ee;
+}
+
+.secured-profile-icon {
+  background-color: #e9f4f6;
+}
+
+.support-icon {
+  background-color: #f2e7f5;
+}
+
+.features-section__card__content {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.features-section__card__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.features-section__card__description {
+  margin-top: 10px;
+  color: #000000;
+  font-size: 15px;
+}
+
+.features-section__card:hover > .features-section__card__content {
+  background-color: #7030cc;
+}
+
+.features-section__card:hover .features-section__card__title {
+  color: #ffffff;
+}
+
+.features-section__card:hover .features-section__card__description {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1300px) {
+  .hero-section__heading {
+    font-size: 50px;
+  }
+
+  .hero-section__image,
+  .pros-section__image {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .primary-nav__logo {
+    width: 10%;
+  }
+
+  .primary-navbar__item {
+    font-size: 15px;
+  }
+
+  .primary-nav__register {
+    font-size: 16px;
+  }
+
+  .hero-section__heading {
+    font-size: 40px;
+  }
+
+  .hero-section__content {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .features-section,
+  .pros-section {
+    margin-top: 70px;
+  }
+
+  .pros-section__heading,
+  .features-section__heading {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .pros-section__pro-title,
+  .features-section__card__title {
+    font-size: 24px;
+  }
+
+  .pros-section__pro-description,
+  .features-section__card__description {
+    font-size: 15px;
+  }
+
+  .hero-section__image,
+  .pros-section__image {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .primary-nav {
+    flex-direction: column;
+    row-gap: 3em;
+  }
+
+  .primary-navbar__item:last-child {
+    margin-right: 0;
+  }
+
+  .primary-nav__logo {
+    width: 15%;
+    margin: auto;
+  }
+
+  .hero-section__heading {
+    font-size: 34px;
+  }
+
+  .hero-section__image,
+  .pros-section__image {
+    width: 400px;
+  }
+
+  .features-section__cards {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .features-section__card {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-section__container,
+  .pros-section__container {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .hero-section__heading {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+
+  .hero-section__image,
+  .pros-section__image {
+    width: 450px;
+  }
+
+  .pros-section__pro {
+    margin: 70px 0;
+  }
+
+  .pros-section__pro-description {
+    margin: auto;
+  }
+
+  .features-section {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero-section__heading {
+    font-size: 30px;
+  }
+
+  .primary-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .primary-navbar__item {
+    margin-right: 0px;
+  }
+
+  .primary-nav__logo {
+    width: 90px;
+  }
+
+  .hero-section__image,
+  .pros-section__image {
+    width: 100%;
+  }
+
+  .features-section__card {
+    width: 90%;
+  }
+
+  .features-section__card__icon > img {
+    width: 50px;
+  }
+}
